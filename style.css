@@ -1,0 +1,364 @@
+/*
+ Theme Name:   BB Lightning Theme
+ Theme URI:    https://ivanjuras.com
+ Description:  Minimalistic, lightning fast and performant custom theme made for Beaver Builder.
+ Author:       Ivan Juras
+ Author URI:   https://ivanjuras.com
+ Version:      1.0
+ Text Domain:  bblt
+ */
+
+ 
+
+ /****************************** CORE STYLES ******************************/
+
+ /********** Core typography **********/
+
+ body,
+ p,
+ a,
+ li,
+ blockquote {
+     font-family: "Open Sans", sans-serif;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: sans-serif;
+ }
+
+ /********** Core elements **********/
+
+ * {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     font-size: 100%;
+     padding: 0;
+     margin: 0;
+ }
+
+ strong {
+     font-weight: bold;
+ }
+
+ ul {
+     list-style: disc;
+     padding-left: 2rem;
+ }
+
+ a {
+     text-decoration: none;	
+ }
+
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;	
+     border-top: 1px solid #ccc;
+     margin: 1em 0;
+     padding: 0; 
+ }
+
+ em {
+     font-style: italic;
+ }
+
+ :focus {
+     outline: 0;
+ }
+
+img[data-lazy-src] {
+	opacity: 0;
+}
+img.lazyloaded {
+	-webkit-transition: opacity .5s linear 0.2s;
+	-moz-transition: opacity .5s linear 0.2s;
+	transition: opacity .5s linear 0.2s;
+	opacity: 1;
+}
+
+
+ /********** Core WP Styles **********/
+
+ .alignright,
+ .alignleft {
+     display: block !important;
+     margin: 0 auto !important;
+     margin-bottom: 1.5rem !important;
+ }
+
+ @media ( min-width: 1024px ) {
+     .alignright {
+     float: right;
+     margin: 0.8em 0 1em 1em !important;
+     }
+     .alignleft {
+         float: left;
+         margin: 0.8em 1em 1em 0 !important;
+     }
+     .aligncenter {
+         display: block;
+         margin: 0.8em auto !important;
+     }
+ }
+
+
+
+ /*******************************************************
+ ******************** CORE BB STYLES ********************
+ *******************************************************/
+
+ /********** Sticky footer **********/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header.fl-builder-content {
+  flex: 1 0 auto;
+}
+div.fl-builder-content {
+  flex: 1 0 auto;
+}
+
+footer.fl-builder-content {
+  flex-shrink: 0;
+}
+
+
+ /********** BB buttons **********/
+
+ .fl-button:focus {
+     outline: 0;
+ }
+
+
+
+ /************************************************************************
+ ******************** CORE RESPONSIVE MENU PRO STYLES ********************
+ ************************************************************************/
+
+ #responsive-menu-pro-noscroll-wrapper {
+     overflow: visible !important;
+ }
+
+
+ /*********************************************************
+ ******************** CORE FONT STYLES ********************
+ *********************************************************/
+
+
+ /********** Smaller phones **********/
+
+ p {
+     margin-bottom: 1.6em;
+ }
+
+ p,
+ li,
+ blockquote {
+     font-size: 1rem;
+     line-height: 1.7em;
+ }
+
+ h1 {
+     font-size: 2rem;
+     line-height: 1.25em;
+ }
+
+ h2,
+ .h1-smaller
+ .h1-smaller h1,
+ .h3-bigger,
+ .h3-bigger h3 {
+     font-size: 1.625rem;
+     line-height: 1.15384615em;
+ }
+
+ h3,
+ .h2-smaller,
+ .h2-smaller h2,
+ .h4-bigger,
+ .h4-bigger h4 {
+     font-size: 1.375rem;
+     line-height: 1.13636364em;
+ }
+
+ h4 {
+     font-size: 1.125rem;
+     line-height: 1.11111111em;
+ }
+
+
+ /********** Bigger phones **********/
+
+ @media ( min-width: 544px ) {
+     p,
+     li,
+     blockquote {
+         font-size: 1rem;
+     }
+
+     h1 {
+         font-size: 2rem;
+         line-height: 1.25em;
+     }
+
+     h2,
+     .h1-smaller,
+     .h1-smaller h1,
+     .h3-bigger,
+     .h3-bigger h3 {
+         font-size: 1.625rem;
+         line-height: 1.15384615em;
+     }
+
+     h3,
+     .h2-smaller,
+     .h2-smaller h2,
+     .h4-bigger,
+     .h4-bigger h4 {
+         font-size: 1.375rem;
+         line-height: 1.13636364em;
+     }
+
+     h4 {
+         font-size: 1.125rem;
+         line-height: 1.11111111em;
+     }
+ }
+
+
+ /********** Tablets **********/
+
+ @media  ( min-width: 768px ) {
+     p,
+     li,
+     blockquote {
+         font-size: 1rem;
+     }
+
+     h1 {
+         font-size: 2.5rem;
+         line-height: 1.125em;
+     }
+
+     h2,
+     .h1-smaller,
+     .h1-smaller h1,
+     .h3-bigger,
+     .h3-bigger h3 {
+         font-size: 2rem;
+         line-height: 1.25em;
+     }
+
+     h3,
+     .h2-smaller,
+     .h2-smaller h2,
+     .h4-bigger,
+     .h4-bigger h4 {
+         font-size: 1.5rem;
+         line-height: 1.25em;
+     }
+
+     h4 {
+         font-size: 1.125rem;
+         line-height: 1.22222222em;
+     }
+ }
+
+
+ /********** Smaller desktops **********/
+
+ @media  ( min-width: 992px ) {
+     p,
+     li,
+     blockquote {
+         font-size: 1rem;
+     }
+
+     h1 {
+         font-size: 3rem;
+         line-height: 1.05em;
+     }
+
+     h2,
+     .h1-smaller,
+     .h1-smaller h1,
+     .h3-bigger,
+     .h3-bigger h3 {
+         font-size: 2.25rem;
+         line-height: 1.25em;
+     }
+
+     h3,
+     .h2-smaller,
+     .h2-smaller h2,
+     .h4-bigger,
+     .h4-bigger h4 {
+         font-size: 1.75rem;
+         line-height: 1.25em;
+     }
+
+     h4 {
+         font-size: 1.125rem;
+         line-height: 1.22222222em;
+     }
+ }
+
+
+ /********** Bigger desktops **********/
+
+ @media  ( min-width: 1200px ) {
+     p,
+     li,
+     blockquote {
+         font-size: 1.125rem;
+     }
+
+     h1 {
+         font-size: 3rem;
+         line-height: 1.05em;
+     }
+
+     h2,
+     .h1-smaller,
+     .h1-smaller h1,
+     .h3-bigger,
+     .h3-bigger h3 {
+         font-size: 2.25rem;
+         line-height: 1.25em;
+     }
+
+     .h2-bigger {
+         font-size: 3rem;    
+     }
+
+     h3,
+     .h2-smaller,
+     .h2-smaller h2,
+     .h4-bigger,
+     .h4-bigger h4 {
+         font-size: 1.75rem;
+         line-height: 1.25em;
+     }
+
+     h4 {
+         font-size: 1.125rem;
+         line-height: 1.22222222em;
+     }
+ }
