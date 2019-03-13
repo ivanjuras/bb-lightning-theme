@@ -7,4 +7,4 @@
 </div>
 <?php do_action( 'bblt_after_content' ); ?>
 
-<?php get_footer();
+<?php get_footer(); ?>

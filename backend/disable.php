@@ -1,15 +1,15 @@
 <?php
 
 // Disable rel='shortlink' and shortlink HTTP header
-add_filter('after_setup_theme', 'bblt_remove_shortlink');
+add_filter( 'after_setup_theme', 'bblt_remove_shortlink' );
 function bblt_remove_shortlink() {
-	remove_action('wp_head', 'wp_shortlink_wp_head', 10);
-	remove_action( 'template_redirect', 'wp_shortlink_header', 11);
+	remove_action( 'wp_head', 'wp_shortlink_wp_head', 10 );
+	remove_action( 'template_redirect', 'wp_shortlink_header', 11 );
 }
 
 
 // Disable embeds
-add_action('init', 'bblt_remove_embeds');
+add_action( 'init', 'bblt_remove_embeds' );
 function bblt_remove_embeds() {
 	remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
 }
