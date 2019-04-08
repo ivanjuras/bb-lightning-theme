@@ -4,7 +4,6 @@
     <?php while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
-</div>
 <?php do_action( 'bblt_after_content' ); ?>
 
 <?php get_footer(); ?>

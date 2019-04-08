@@ -71,7 +71,7 @@ remove_action( 'wp_footer', 'FLBuilder::include_jquery' );
 
 
 // Remove RSD rel link tag
-remove_action ('wp_head', 'rsd_link');
+remove_action ( 'wp_head', 'rsd_link' );
 
 
 // Remove Windows Live Writer tag
@@ -79,4 +79,4 @@ remove_action( 'wp_head', 'wlwmanifest_link');
 
 
 // Remove WP Generator tag
-remove_action('wp_head', 'wp_generator');
+remove_action( 'wp_head', 'wp_generator' );
