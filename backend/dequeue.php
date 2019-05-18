@@ -13,6 +13,7 @@ function bblt_deregister_styles() {
 	}
 }
 
+
 // Dequeue scripts
 add_action( 'wp_print_scripts', 'bblt_dequeue_scripts', 9999 );
 function bblt_dequeue_scripts() {
